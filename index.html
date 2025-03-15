@@ -47,8 +47,8 @@
             margin-bottom: 20px;
             background: #f4a261;
             color: white;
-            display: inline-block;
-            padding: 10px 20px;
+            margin-left: 60px;
+            margin-right: 60px;
             border-radius: 5px;
         }
 
@@ -106,7 +106,7 @@
 
         .back-button {
             position: absolute;
-            top: 150px;
+            top: 162px;
             left: 20px;
             padding: 10px 20px;
             background-color: #ffffff;
@@ -125,7 +125,6 @@
         }
 
         /* Modal Styles */
-        /* Modified Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -134,7 +133,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.9);
-            overflow-y: auto; /* Enable vertical scrolling */
+            overflow-y: auto;
             z-index: 1000;
         }
 
@@ -142,7 +141,7 @@
             margin: 20px auto;
             display: block;
             max-width: 90%;
-            max-height: calc(100vh - 40px); /* Account for margin */
+            max-height: calc(100vh - 40px);
             object-fit: contain;
             animation: zoom 0.3s;
         }
@@ -165,29 +164,66 @@
             color: #f4a261;
         }
 
-        /* Footer */
-        footer { 
-            background-color: #333; 
-            color: white; 
-            padding: 1rem 5%; 
-            margin-top: 1rem; 
-            text-align: center; 
-        }
-        .social-icons a { 
-            color: white; 
-            margin: 0 20px; 
-            font-size: 1.5rem; 
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+            }
+            .footer-section {
+                text-align: center;
+            }
+            .social-links {
+                justify-content: center;
+            }
         }
 
-        footer p{
-            margin-top: 5px;
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
         }
-        footer h5{
-            font-size: 30px; 
-            margin-top: 1px;
-            text-align: center; 
-            margin-bottom: auto;
-            font-family: 'AdineKirnberg-Script';
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            flex: 1 1 300px;
+            text-align: left;
+        }
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff9a9e;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .footer-section p {
+            margin-bottom: 10px;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #ff9a9e;
+        }
+        .copyright {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
@@ -196,966 +232,921 @@
         <h1>Styles & Colours</h1>
         <p>Explore our premium collection of photo frames</p>
     </header>
-
     <div class="container">
         <section class="frame-category">
-            <h2>New Frame</h2>
+            <h2>Classic Frame</h2>
             <div class="frame-row">
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(1).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(1).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(2).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(3).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-                </div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(3).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(4).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(5).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(6).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(7).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(8).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(9).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(10).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(11).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(12).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(13).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(14).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(15).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(16).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(17).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(18).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(19).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(20).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(21).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(22).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(23).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(24).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(25).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(26).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(27).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(28).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(29).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(30).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(31).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(32).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(33).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(34).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(35).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(36).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(37).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(38).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(39).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(40).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(41).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(42).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(43).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(44).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(45).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(46).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(47).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(48).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(49).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(50).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(51).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(52).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(53).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(54).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(55).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(56).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(57).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(58).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(59).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(60).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(61).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(62).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(63).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(64).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(65).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(66).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(67).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(68).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(69).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(70).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(71).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(72).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(73).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(74).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-</div>
-
-<div class="frame">
-    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(75).jpg?raw=true" alt="Black Frame">
-    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-		</div>
-
-		<div class="frame">
-    			<img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(76).jpg?raw=true" alt="Black Frame">
-    			<div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-		</div>
-
-		<div class="frame">
-    			<img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(77).jpg?raw=true" alt="Black Frame">
-    			<div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-		</div>
-
-		<div class="frame">
-    			<img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(78).jpg?raw=true" alt="Black Frame">
-    			<div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-		</div>
-
-                <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(79).jpg?raw=true" alt="Black Frame">
-                    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(80).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(4).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(6).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(81).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(7).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(8).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(82).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(26).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(28).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(29).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(31).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(83).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(38).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(39).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(84).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(40).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(42).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(85).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(44).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>8x10 in/ 20x29.7 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="8x10 in/ 20x29.7 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(46).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>8x10 in/ 20x29.7 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="8x10 in/ 20x29.7 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(86).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(47).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>8x10 in/ 20x29.7 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="8x10 in/ 20x29.7 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(50).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>8x10 in/ 20x29.7 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="8x10 in/ 20x29.7 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(87).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(57).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>8x10 in/ 20x29.7 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(58).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(88).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(64).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(66).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(89).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(67).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(68).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(77).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(78).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(90).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(79).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(84).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(91).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(87).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(88).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(92).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(93).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(94).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(93).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(101).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
                         <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(103).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Classic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(94).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(5).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(9).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(95).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(10).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(11).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
-		<div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(96).jpg?raw=true" alt="Black Frame">
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(12).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(14).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
-		<div class="frame">
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(16).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(17).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(18).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(19).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(21).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(22).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(23).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(24).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(25).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(27).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(30).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(32).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Framee" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(33).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(34).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(36).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(37).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(41).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(43).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(48).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(49).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(51).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(53).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(54).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(55).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(56).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(62).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(63).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(65).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(70).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(72).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(74).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(76).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(95).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(102).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(105).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Modern Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Modern Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+            
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(2).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>8x10 in/ 20x29.7 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(13).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(15).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(20).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(35).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(45).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(52).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(59).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(60).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(61).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(69).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(71).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(73).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(75).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(80).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(81).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(82).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(83).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(85).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(86).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(89).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(90).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(91).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(92).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(96).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="frame">
                     <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(97).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
-
-		<div class="frame">
-                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(97).jpg?raw=true" alt="Black Frame">
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(98).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-                </div>
-
-		<div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(98).jpg?raw=true" alt="Black Frame">
-                    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(99).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(99).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
+                    </div>
+                </div>
+                <div class="frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(100).jpg?raw=true" alt="Black Frame">
+                    <div class="frame-info">
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
                 </div>
 
                 <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(100).jpg?raw=true" alt="Black Frame">
+                    <img src="https://github.com/gourcr7/Photoprime/blob/main/Frame%20(104).jpg?raw=true" alt="Black Frame">
                     <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
+                        <h3>Aesthetic Frame</h3>
+                        <p>6x8 in/15x21 cm - $29.99</p>
+                        <button class="btn buy-btn" data-frame-type="Aesthetic Frame" data-frame-size="6x8 in/15x21 cm" data-frame-price="$29.99">Buy Now</button>
                     </div>
-                </div>
-
-                <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(101).jpg?raw=true" alt="Black Frame">
-                    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-                </div>
-
-                <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(102).jpg?raw=true" alt="Black Frame">
-                    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-                </div>
-
-                <div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(103).jpg?raw=true" alt="Black Frame">
-                    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-                </div>
-
-		<div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(104).jpg?raw=true" alt="Black Frame">
-                    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-                </div>
-
-		<div class="frame">
-                    <img src=""https://github.com/gourcr7/Photoprime/blob/main/Frame%20(105).jpg?raw=true" alt="Black Frame">
-                    <div class="frame-info">
-                        <h3>Classic Frame</h3>
-                        <p>4x6 inches - $29.99</p>
-                        <button class="btn buy-btn" data-frame-type="Classic Frame" data-frame-size="4x6 inches" data-frame-price="$29.99">Buy Now</button>
-                    </div>
-                </div>
+		</div>
             </div>
         </section>
     </div>
+    <a href="index.html" class="back-button">Back</a>
 
     <!-- Image Modal -->
     <div id="myModal" class="modal">
@@ -1164,12 +1155,35 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Photoprime. All rights reserved.</p>
-        <h5>Gour Sardar</h5>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Photoprime</h3>
+                <p>We specialize in high-quality, elegant photo frames that enhance your precious memories.</p>
+                <p>Established in 2024, we've helped thousands of customers showcase their moments beautifully.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html #home" style="color: white; text-decoration: none;">Home</a></p>
+                <p><a href="index.html#categories" style="color: white; text-decoration: none;">Categories</a></p>
+                <p><a href="index.html#contact" style="color: white; text-decoration: none;">Contact</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Frame Street, Photo City</p>
+                <p><i class="fas fa-phone"></i> +91 9635242398</p>
+                <p><i class="fas fa-envelope"></i> sardarsagar589@gmail.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Photoprime. All Rights Reserved.</p>
         </div>
     </footer>
 
